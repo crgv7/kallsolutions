@@ -1,60 +1,19 @@
 import 'package:flutter/material.dart';
-
+import 'package:kallsolutions/controllers/controller.dart';
+import 'package:get/get.dart';
+import 'package:kallsolutions/devices/movile_screen.dart';
+import 'package:kallsolutions/devices/pc_screen.dart';
 class Body extends StatelessWidget {
-  const Body({super.key});
+  final Controller controller = Get.put(Controller());
 
+  Body({super.key});
+  
+  
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
-      child:Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          
-          Text(
-            'Kallsolutions',
-            style: TextStyle(
-                fontWeight: FontWeight.w800, fontSize: 10, height: 0.9, color: Colors.white),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          /*
-          Text(
-            'General Solutions Company',
-            style: TextStyle(
-                fontWeight: FontWeight.w800, fontSize: 40, height: 0.9, color: Colors.white),
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          */
-          /*
-              IconText(
-                icon: const Icon(
-                  Icons.phone,
-                  size: 28,
-                ),
-                text: '7862816850',
-              ),
-              const SizedBox(
-                height: 30,
-          ),
 
-          IconText(
-            icon: const Icon(Icons.email, size: 28), text: 'k_allsolutions@yahoo.com'),
-          const SizedBox(
-            height: 30,
-          ),  
-          IconText(icon: Icon(Icons.location_on, size: 28), text: 'Florida, USA'),	
-          */
-          ])
-     
-        
-   
-
-    );
+    print("esmovilbody  ${controller.ismobile}");
+    return controller.ismobile ? const MobileView() : const PcScreen();
   }
 
 
@@ -94,3 +53,5 @@ class Body extends StatelessWidget {
     );
   }
 }
+
+

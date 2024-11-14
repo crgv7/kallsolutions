@@ -7,6 +7,7 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  get: ^4.6.6
   flutter:
     sdk: flutter
 
@@ -18,15 +19,9 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-assets:
-  - logo.png
-  - background.png
+  assets:
+    - assets/
+    - assets/images/
 
-fonts:
-  - family: OpenSans
-    fonts:
-      - asset: assets/fonts/OpenSans-Regular.ttf
-  - family: OpenSansBold
-    fonts:
-      - asset: assets/fonts/OpenSans-Bold.ttf
+
 

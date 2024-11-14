@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:kallsolutions/screens/home.dart';
+import 'package:get/get.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+
+void main() => runApp(GetMaterialApp(home: Home()));
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
     );
   }
