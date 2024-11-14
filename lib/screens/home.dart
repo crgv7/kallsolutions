@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
       body:  CenteredView(
         key: const ValueKey('home'),
         child: Column(children: <Widget>[
-            Navigationbar(),
+            //Navigationbar(),
             Expanded(child: Row(children: [Body()],))
           ],),
       ),

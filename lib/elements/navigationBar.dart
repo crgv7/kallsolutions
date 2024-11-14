@@ -11,12 +11,11 @@ class Navigationbar extends StatelessWidget {
           SizedBox(
             height: 80,
             width: 150,
-            child: Image.asset('assets/logo.png'),
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              _NavBarItem('Episodes'),
+              _NavBarItem('Services'),
               SizedBox(
                 width: 60,
               ),
@@ -38,7 +37,7 @@ class _NavBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(fontSize: 18),
+      style: TextStyle(fontSize: 18, color: Colors.white),
     );
   }
 }

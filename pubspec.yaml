@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.5.4
+  sdk: ^3.5.3
 
 dependencies:
   flutter:
@@ -19,7 +19,8 @@ flutter:
   uses-material-design: true
 
 assets:
-  - assets/logo.png
+  - logo.png
+  - background.png
 
 fonts:
   - family: OpenSans
