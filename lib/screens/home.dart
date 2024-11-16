@@ -4,6 +4,8 @@ import 'package:kallsolutions/elements/body.dart';
 import 'package:kallsolutions/elements/centerView.dart';
 import 'package:kallsolutions/elements/navigationBar.dart';
 import 'package:get/get.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 class Home extends StatelessWidget {
   //bool _ismobile=false;
@@ -29,6 +31,31 @@ class Home extends StatelessWidget {
             if(!controller.ismobile) Navigationbar(),
             Expanded(child: Row(children: [Body()],))
           ],),
+      ),
+      floatingActionButton: SpeedDial(
+        child: const Icon(Icons.more_vert, color: Colors.white,),
+        buttonSize: Size(58, 58),
+        curve: Curves.bounceIn,
+        activeIcon: Icons.close,
+
+        children: [
+          SpeedDialChild(
+            child: const Icon(Icons.share),
+            label: 'Share',
+            onTap: () => print('Share'),
+          ),
+          SpeedDialChild(
+            child: const Icon(Icons.favorite),
+            label: 'Favorite',
+            onTap: () => print('Favorite'),
+          ),
+          SpeedDialChild(
+            child: const Icon(Icons.delete),
+            label: 'Delete',  
+            onTap: () => print('Delete'),
+          ),
+        ],
+
       ),
     );
   }
