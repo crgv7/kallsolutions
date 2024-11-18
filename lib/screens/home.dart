@@ -34,9 +34,15 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton: SpeedDial(
         child: const Icon(Icons.more_vert, color: Colors.white,),
-        buttonSize: Size(58, 58),
+        buttonSize: const Size(55, 55),
         curve: Curves.bounceIn,
         activeIcon: Icons.close,
+        backgroundColor: Colors.yellow  ,
+        activeBackgroundColor: Colors.black,
+       //overlayColor: Colors.black,
+        overlayOpacity: 0.1,
+        
+
 
         children: [
           SpeedDialChild(
