@@ -22,23 +22,7 @@ class MobileView extends StatelessWidget {
           SizedBox(
             height: 30,
           ),
-      IconText(
-                icon: Icon(
-                  Icons.phone,
-                  size: 28,
-                ),
-                text: '7862816850',
-              ),
-              SizedBox(
-                height: 30,
-          ),
-
-          IconText(
-            icon: Icon(Icons.email, size: 28), text: 'k_allsolutions@yahoo.com'),
-          SizedBox(
-            height: 30,
-          ),  
-          IconText(icon: Icon(Icons.location_on, size: 28), text: 'Florida, USA'),	
+      
         
           ])
      

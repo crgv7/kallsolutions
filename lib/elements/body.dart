@@ -13,6 +13,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
 
     print("esmovilbody  ${controller.ismobile}");
+    
     return controller.ismobile ? const MobileView() : const PcScreen();
   }
 

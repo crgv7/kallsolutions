@@ -20,6 +20,7 @@ class Home extends StatelessWidget {
     //_ismobile=size.width<600;
     controller.setIsMobile(context);
     print("esmovillll  ${controller.ismobile}");
+  
     
     return Scaffold(
       backgroundColor: Colors.white,
@@ -37,28 +38,30 @@ class Home extends StatelessWidget {
         buttonSize: const Size(55, 55),
         curve: Curves.bounceIn,
         activeIcon: Icons.close,
-        backgroundColor: Colors.yellow  ,
+        backgroundColor: Colors.black  ,
         activeBackgroundColor: Colors.black,
        //overlayColor: Colors.black,
         overlayOpacity: 0.1,
+        spacing: 20,
+        spaceBetweenChildren: 20,
         
 
 
         children: [
           SpeedDialChild(
-            child: const Icon(Icons.share),
-            label: 'Share',
-            onTap: () => print('Share'),
+            child: const Icon(Icons.call),
+            label: 'Call',
+            onTap: () => print('Call'),
           ),
           SpeedDialChild(
-            child: const Icon(Icons.favorite),
-            label: 'Favorite',
-            onTap: () => print('Favorite'),
+            child: const Icon(Icons.location_on),
+            label: 'location',
+            onTap: () => print('location'),
           ),
           SpeedDialChild(
-            child: const Icon(Icons.delete),
-            label: 'Delete',  
-            onTap: () => print('Delete'),
+            child: const Icon(Icons.email),
+            label: 'email',  
+            onTap: () => print('email'),
           ),
         ],
 
